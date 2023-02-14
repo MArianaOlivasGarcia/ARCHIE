@@ -1,0 +1,145 @@
+
+
+$primary: #01bfd8; 
+// $primary: #2f97ed;
+$secondary: #0B365A;
+$dark: #0B365A;
+$warning: #fabc14;
+
+$bgDark: #0e4470;
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+html {
+    background-color: $bgDark;
+}
+
+html, body {
+    font-family: Raleway, Avenir, Helvetica, Arial, sans-serif !important;
+}
+
+main {
+    background-color: $bgDark;
+    z-index: 0 !important;
+    position: relative !important;
+}
+  
+
+button.btn.btn-primary,
+a.btn.btn-primary { 
+    color: white !important;
+}
+
+button.btn.btn-outline-primary:hover,
+a.btn.btn-outline-primary:hover {
+    color: white !important;
+}
+
+
+button.btn.btn-google {
+    border: 1px solid #ced4da;
+    color: #999;
+    font-weight: 500;
+}
+
+button.btn.btn-google:hover {
+    background-color: #f6f6f6;
+}
+
+h2, 
+h3 {
+    color: #FABC14 !important;
+}
+
+// TEXTO DE ERROR
+span.text-danger {
+    font-size: 14px;
+}
+
+
+// Dashboard
+:root {
+    --offcanvas-width: 270px;
+    --navbar-height: 62px;
+}
+
+
+.sidebarNav {
+    width: var(--offcanvas-width) !important;
+}
+
+
+nav {
+    height: var(--navbar-height) !important;
+}
+
+nav i{
+    color: white !important;
+}
+
+main {
+    margin-top: var(--navbar-height);
+    min-height: calc(100vh - var(--navbar-height));
+    color: white;
+}
+
+
+@media (min-width: 992px) {
+    .offcanvas-backdrop{
+        display: none !important;
+    }
+    .sidebarNav {
+        transform: none !important;
+        visibility: visible !important;
+    }
+    main {
+        margin-left: var(--offcanvas-width);
+    }
+    nav {
+        margin-left: var(--offcanvas-width);
+    }
+}
+.offcanvas  {
+    color: white !important;
+}
+
+.offcanvas, .fixed-top  {
+    z-index: 1029 !important;
+}
+ 
+.offcanvas-backdrop{
+    z-index: 1028 !important;
+}
+
+// Fin Dashboard
+
+
+// AUTH LAYOUT
+
+
+@media (min-width: 768px) { 
+    .authLayout div.authContainer {
+        min-height: 100vh;
+    }
+}
+
+
+/* CODE */
+.authLayout input[type=tel] {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #e5f0ff !important;
+    font-family: Raleway, Avenir, Helvetica, Arial, sans-serif !important;
+}
+
+.authLayout .styles_react-code-input-container__tpiKG {
+    width: 100% !important;
+}
+
+.authLayout a {
+    text-decoration: none;
+}
+
+
+// END AUTH LAYOUT

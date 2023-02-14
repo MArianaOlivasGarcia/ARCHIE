@@ -1,0 +1,15 @@
+
+.card{
+    border-radius: 10px !important;
+}
+
+.card img {
+    border-radius: 10px !important;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #fabc14;
+    font-size: 18px;
+}

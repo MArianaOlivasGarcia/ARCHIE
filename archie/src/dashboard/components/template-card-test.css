@@ -1,0 +1,26 @@
+
+.card{
+    border-radius: 10px !important;
+    background-color: transparent;
+}
+
+.card img {
+    border-radius: 10px !important;
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card h3 {
+    color: #fabc14;
+    font-size: 16px;
+}
+
+
+
+.card span.demoSpan {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+}
